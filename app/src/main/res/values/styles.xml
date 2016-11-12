@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+         Base application theme, dependent on API level. This theme is replaced
+         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+     -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/gray</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item>
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemAppTheme</item>
+        <item name="android:popupMenuStyle">@style/myPopupMenuStyle</item>
+    </style>
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title"></style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="myPopupMenuStyle" parent="@android:style/Widget.Holo.Light.PopupMenu" />
+
+    <style name="EditTextAppTheme" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="CheckBoxAppTheme" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="SpinnerAppTheme" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:color">@color/light_gray</item>
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemAppTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="SpinnerDropDownItemAppTheme" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+
+    <style name="SpinnerItemAppTheme" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="BackWallTheme">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TabAppTheme" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/gray</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>
