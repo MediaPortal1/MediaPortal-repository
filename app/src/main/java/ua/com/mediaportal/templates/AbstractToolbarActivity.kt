@@ -21,7 +21,7 @@ abstract class AbstractToolbarActivity : AppCompatActivity() {
     protected open fun initSetting() {
         initContent()
         initToolbar()
-        if(isBackButtonEnabled()) setBackToogle()
+        if (isBackButtonEnabled()) setBackToggle()
         initViews()
     }
 
@@ -40,7 +40,7 @@ abstract class AbstractToolbarActivity : AppCompatActivity() {
         supportActionBar?.setTitle(getActivityTitle())
     }
 
-    protected fun setBackToogle() {
+    protected fun setBackToggle() {
         supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
     }
 
@@ -48,7 +48,7 @@ abstract class AbstractToolbarActivity : AppCompatActivity() {
 
     @IdRes protected abstract fun getActivityTitle(): Int
 
-    abstract protected fun isBackButtonEnabled():Boolean
+    abstract protected fun isBackButtonEnabled(): Boolean
 
     abstract protected fun initViews()
 

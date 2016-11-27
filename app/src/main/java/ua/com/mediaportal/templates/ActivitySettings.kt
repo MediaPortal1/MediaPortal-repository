@@ -10,8 +10,9 @@ object ActivitySettings {
     @JvmStatic val ACTIVITY_TOOLBAR_DRAWER = 2
 
     //      CONTENT
-    @JvmStatic val CONTENT_DEFAULT = 0
     @JvmStatic val CONTENT_VIEWPAGER = 1
     @JvmStatic val CONTENT_RECYCLER = 2
     @JvmStatic val CONTENT_CUSTOM = 3
+
+
 }
